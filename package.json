@@ -10,5 +10,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tofik819396-cmyk/web-dev-3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tofik819396-cmyk/web-dev-3/issues"
+  },
+  "homepage": "https://github.com/tofik819396-cmyk/web-dev-3#readme"
 }
