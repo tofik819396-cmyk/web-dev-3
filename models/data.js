@@ -16,6 +16,24 @@ let notes = [
         link: "",
         createdOn: "01-09-2026",
         author: "safeek ahmed"
+    },
+      {
+        id :2,
+        title: "web dev II",
+        description: "This is a web dev II notes",
+        note: "index.js",
+        link: "",
+        createdOn: "01-09-2026",
+        author: "safeek ahmed"
+    },
+      {
+        id :2,
+        title: "web dev II",
+        description: "This is a web dev II notes",
+        note: "index.js",
+        link: "",
+        createdOn: "01-09-2026",
+        author: "safeek ahmed"
     }
 ]
 
