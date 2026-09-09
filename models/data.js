@@ -12,28 +12,28 @@ let notes = [
         id :2,
         title: "web dev II",
         description: "This is a web dev II notes",
-        note: "index.js",
+        note: "DAA",
         link: "",
         createdOn: "01-09-2026",
         author: "safeek ahmed"
     },
       {
-        id :2,
-        title: "web dev II",
-        description: "This is a web dev II notes",
-        note: "index.js",
+        id :3,
+        title: "web dev IIII",
+        description: "This is a web dev IIII notes",
+        note: "DBMS",
         link: "",
-        createdOn: "01-09-2026",
-        author: "safeek ahmed"
+        createdOn: "03-09-2026",
+        author: "ahmed"
     },
       {
-        id :2,
-        title: "web dev II",
-        description: "This is a web dev II notes",
-        note: "index.js",
+        id :4,
+        title: "web dev IV",
+        description: "This is a web dev IV notes",
+        note: "OS",
         link: "",
-        createdOn: "01-09-2026",
-        author: "safeek ahmed"
+        createdOn: "04-09-2026",
+        author: "arshad ahmed"
     }
 ]
 

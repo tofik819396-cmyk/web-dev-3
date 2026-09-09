@@ -1,6 +1,14 @@
 const {notes} = require('../models/data');
 const getNotes = (req, res) => {
+
+    try{
+
     res.status(200).send("Get Notes");
+    }
+    catch(error){
+        res.status(500).send(" Sorry notes nhi mil rha Internal Server Error");
+
+    }
 
 }
 
