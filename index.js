@@ -1,16 +1,20 @@
-const express = require("express");
-const morgan = require("morgan");
-const app = express();
-const notesRoutes = require("./routes/notesRoutes")
-const router = express.Router();
+require('dotenv').config();
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }))
+const express = require("express")
+const morgan = require("morgan")
+const db =require("./config/db")
+const app = express();
+db();
+const noteRoutes = require('./routes/notesRoutes');
+const userRoutes = require("./routes/userRoutes")
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
 app.use(morgan("combined"))
 
 
-app.use("/api", notesRoutes)
+app.use("/api",noteRoutes)
+app.use("/user",userRoutes)
 
-app.listen(3000, () => {
-    console.log("server is running on port 3000")
+app.listen(process.env.PORT,()=>{
+    console.log(`Server is running on PORT ${process.env.PORT}`)
 })

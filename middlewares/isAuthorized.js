@@ -1,20 +1,21 @@
-const isAuthoeized = (req, res, next) => {
-     let token = req.headers.cookie;
+const isAuthorized = (req,res,next)=>{
+    let token =  req.headers.cookie;
 
-     if((!token) && (token!=123987)){
-        return res.status(401).send("kon hai bhai tu authorized nhi hai")
-
-     }
-     next();
+    if((!token) || (token!=123987)){
+     return res.status(401).send("Kon hai bhai tu")
+    }
+    next()
 
 }
 
-const isloggedIn = ((req,res,next) => {
-    let login = true;
-    
+
+const isLoggedIn = (req,res,next)=>{
+    let login= false;
+
     if(!login){
-        return res.status(401).send("login kro bhai")
+        return res.status(401).send("Bhai tu phir agaya")
     }
-    next();
-})
-module.exports = {isAuthoeized, isloggedIn}
+    next()
+}
+
+module.exports = {isAuthorized,isLoggedIn}

@@ -1,13 +1,12 @@
-const express = require('express');
-const { getNotes,createNotes,getNotesById,updateNotes,deleteNotes} = require('../controllers/notescontroller');
-const { isAuthoeized,isloggedIn } = require('../middlewares/isAuthorized');
-const router = express.Router();
+const express = require("express")
+const { getNotes, createNote, getNoteById, updateNote, deleteNote } = require("../controler/notesControler")
+const { isAuthorized, isLoggedIn } = require("../middlewares/isAuthorized")
+const router = express.Router()
 
-router.get("/notes",isAuthoeized,isloggedIn, getNotes);
-router.get("/notes/:id",isAuthoeized, isloggedIn, getNotesById);
-router.post("/notes", createNotes);
-router.put("/update-notes/:id", updateNotes);
-router.delete("/delete-notes/:id", deleteNotes);
+router.get("/notes",isAuthorized,isLoggedIn,getNotes)
+router.get("/notes/:id",isAuthorized,isLoggedIn,getNoteById)
+router.post("/notes",createNote)
+router.put("/update-note/:id",updateNote)
+router.delete("/delete-note/:id",deleteNote)
 
-
-module.exports = router;
+module.exports = router

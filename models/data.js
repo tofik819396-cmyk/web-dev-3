@@ -1,40 +1,42 @@
 let notes = [
-    { id:1,
-        title: "web dev III",
-        description: "This is a web dev III notes",
-        note: "index.js",
-        link: "",
-        createdOn: "02-09-2026",
-        author: "John Doe"
+    {
+        id:1,
+        title:"Web dev III",
+        description:"This is web dev III note",
+        note:"index.js",
+        link:"",
+        createdOn:"02-09-2026",
+        author:"Jack Sparrow"
+    },
+     {
+        id:2,
+        title:"OS",
+        description:"This is OS note",
+        note:"index.js",
+        link:"",
+        createdOn:"03-09-2026",
+        author:"Ben Duckett"
     }
     ,
-    {
-        id :2,
-        title: "web dev II",
-        description: "This is a web dev II notes",
-        note: "DAA",
-        link: "",
-        createdOn: "01-09-2026",
-        author: "safeek ahmed"
-    },
-      {
-        id :3,
-        title: "web dev IIII",
-        description: "This is a web dev IIII notes",
-        note: "DBMS",
-        link: "",
-        createdOn: "03-09-2026",
-        author: "ahmed"
-    },
-      {
-        id :4,
-        title: "web dev IV",
-        description: "This is a web dev IV notes",
-        note: "OS",
-        link: "",
-        createdOn: "04-09-2026",
-        author: "arshad ahmed"
+     {
+        id:3,
+        title:"DBMS",
+        description:"This is DBMS note",
+        note:"index.js",
+        link:"",
+        createdOn:"04-09-2026",
+        author:"Allen Solly"
+    }
+    ,
+     {
+        id:4,
+        title:"CN",
+        description:"This is CN note",
+        note:"index.js",
+        link:"",
+        createdOn:"01-09-2026",
+        author:"Tom"
     }
 ]
 
-module.exports = { notes }
+module.exports = {notes}
